@@ -20,22 +20,21 @@ export default function HomeScreen() {
         <HelloWave />
       </ThemedView>
       <ThemedView style={styles.stepContainer}>
-        <ThemedText type="subtitle">Step 1: Try it</ThemedText>
+        <ThemedText type="subtitle">Lista</ThemedText>
         <ThemedText>
-          Edit <ThemedText type="defaultSemiBold">app/(tabs)/index.tsx</ThemedText> to see changes.
-          Press{' '}
+          Estudo na <ThemedText type="defaultSemiBold">Universidade Fanor Wyden</ThemedText> no 2º semestre em Análise e Desenvolvimento de Sistema
           <ThemedText type="defaultSemiBold">
             {Platform.select({
               ios: 'cmd + d',
-              android: 'cmd + m',
-              web: 'F12'
+              android: '',
+              web: ''
             })}
           </ThemedText>{' '}
-          to open developer tools.
+          Sou desenvolvedor Front-End, estou aprendendo e trabalhando com React Native
         </ThemedText>
       </ThemedView>
       <ThemedView style={styles.stepContainer}>
-        <ThemedText type="subtitle">Step 2: Explore</ThemedText>
+        <ThemedText type="subtitle">Tela de Login</ThemedText>
         <ThemedText>
           Tap the Explore tab to learn more about what's included in this starter app.
         </ThemedText>
@@ -61,12 +60,13 @@ const styles = StyleSheet.create({
     gap: 8,
   },
   stepContainer: {
+    alignItems: 'center',
     gap: 8,
     marginBottom: 8,
   },
   reactLogo: {
     height: 178,
-    width: 290,
+    width: 0,
     bottom: 0,
     left: 0,
     position: 'absolute',
