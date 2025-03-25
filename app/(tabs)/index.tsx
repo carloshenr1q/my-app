@@ -1,4 +1,4 @@
-import { Image, StyleSheet, Platform } from 'react-native';
+import { Image, StyleSheet, Platform, View } from 'react-native';
 
 import { HelloWave } from '@/components/HelloWave';
 import ParallaxScrollView from '@/components/ParallaxScrollView';
@@ -36,17 +36,20 @@ export default function HomeScreen() {
       <ThemedView style={styles.stepContainer}>
         <ThemedText type="subtitle">Tela de Login</ThemedText>
         <ThemedText>
-          Tap the Explore tab to learn more about what's included in this starter app.
+          Vamos criar o método input
+          <input type="email" name="" id="" />
+          <input type="password" name="" id="" />
+          <input type="submit" value="Entrar" />
         </ThemedText>
       </ThemedView>
       <ThemedView style={styles.stepContainer}>
-        <ThemedText type="subtitle">Step 3: Get a fresh start</ThemedText>
+        <ThemedText type="subtitle">Criar usuário e senha</ThemedText>
         <ThemedText>
           When you're ready, run{' '}
-          <ThemedText type="defaultSemiBold">npm run reset-project</ThemedText> to get a fresh{' '}
-          <ThemedText type="defaultSemiBold">app</ThemedText> directory. This will move the current{' '}
-          <ThemedText type="defaultSemiBold">app</ThemedText> to{' '}
-          <ThemedText type="defaultSemiBold">app-example</ThemedText>.
+          <ThemedText type="defaultSemiBold">npm run reset-project</ThemedText> Vamor criar algoritmo tela de login
+          <ThemedText type="defaultSemiBold">Usuário</ThemedText> Senha
+          <ThemedText type="defaultSemiBold"> Autenticação</ThemedText> to{' '}
+          <ThemedText type="defaultSemiBold">Iremos usar o FireBase do Google</ThemedText>.
         </ThemedText>
       </ThemedView>
     </ParallaxScrollView>
@@ -60,7 +63,6 @@ const styles = StyleSheet.create({
     gap: 8,
   },
   stepContainer: {
-    alignItems: 'center',
     gap: 8,
     marginBottom: 8,
   },
